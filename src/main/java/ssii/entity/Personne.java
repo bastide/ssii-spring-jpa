@@ -13,6 +13,7 @@ import lombok.*;
 public class Personne {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer matricule;
 
     @NonNull
