@@ -17,7 +17,7 @@ public class PersonneRepositoryTest {
 
 
     @Test
-    void testCommandeAvecProduits() {
+    void daoExiste() {
         assertNotNull(clientDao);
     }
 }
