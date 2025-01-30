@@ -8,15 +8,11 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @ToString
 public class Personne {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer matricule;
-
-    @NonNull
-    private String nom;
 
 }

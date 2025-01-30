@@ -50,8 +50,8 @@
 			<!-- Driver JDBC H2 -->
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
+
 		<!-- Lombok pour générer automatiquement les getter / setter...  -->
 		<!-- cf. https://examples.javacodegeeks.com/spring-boot-with-lombok/ -->
 		<dependency>
