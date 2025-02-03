@@ -169,7 +169,7 @@
     <schema id="162" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="163" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2025-02-03.12:35:38</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-02-03.12:53:09</LastIntrospectionLocalTimestamp>
     </schema>
     <user id="164" parent="2" name="SA">
       <Admin>1</Admin>
@@ -181,56 +181,21 @@
       <Position>1</Position>
       <StoredType>INTEGER|0s</StoredType>
       <SequenceInline>1</SequenceInline>
-      <SequenceSequenceIdentity>1(13)</SequenceSequenceIdentity>
+      <SequenceSequenceIdentity>1(4)</SequenceSequenceIdentity>
       <SequenceStartValue>1</SequenceStartValue>
       <SequenceStoredType>INTEGER|0s</SequenceStoredType>
     </column>
-    <column id="167" parent="165" name="MONTANT_PRIME">
-      <Position>2</Position>
-      <StoredType>REAL|0s</StoredType>
-    </column>
-    <column id="168" parent="165" name="POURCENTAGE">
-      <Position>3</Position>
-      <StoredType>REAL|0s</StoredType>
-    </column>
-    <column id="169" parent="165" name="SUPERIEUR_MATRICULE">
-      <Position>4</Position>
-      <StoredType>INTEGER|0s</StoredType>
-    </column>
-    <column id="170" parent="165" name="DTYPE">
+    <column id="167" parent="165" name="NOM">
       <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StoredType>CHARACTER VARYING(31)|0s</StoredType>
-    </column>
-    <column id="171" parent="165" name="DIPLOME">
-      <Position>6</Position>
+      <Position>2</Position>
       <StoredType>CHARACTER VARYING(255)|0s</StoredType>
     </column>
-    <column id="172" parent="165" name="EMAIL">
-      <Position>7</Position>
-      <StoredType>CHARACTER VARYING(255)|0s</StoredType>
-    </column>
-    <column id="173" parent="165" name="NOM">
-      <Position>8</Position>
-      <StoredType>CHARACTER VARYING(255)|0s</StoredType>
-    </column>
-    <foreign-key id="174" parent="165" name="FKEJ4FDSTP8NVCHDFSK6OCO1981">
-      <ColNames>SUPERIEUR_MATRICULE</ColNames>
-      <OnDelete>restrict</OnDelete>
-      <OnUpdate>restrict</OnUpdate>
-      <RefKeyName>CONSTRAINT_4</RefKeyName>
-      <RefTableName>PERSONNE</RefTableName>
-    </foreign-key>
-    <index id="175" parent="165" name="PRIMARY_KEY_4">
+    <index id="168" parent="165" name="PRIMARY_KEY_4">
       <ColNames>MATRICULE</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="176" parent="165" name="FKEJ4FDSTP8NVCHDFSK6OCO1981_INDEX_4">
-      <ColNames>SUPERIEUR_MATRICULE</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-    </index>
-    <key id="177" parent="165" name="CONSTRAINT_4">
+    <key id="169" parent="165" name="CONSTRAINT_4">
       <ColNames>MATRICULE</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

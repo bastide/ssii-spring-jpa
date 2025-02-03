@@ -1,3 +1,5 @@
 -- Initialisation des tables
--- Ce fichier ne peut pas être vide
-SELECT 0 as INUTILE;
+INSERT INTO PERSONNE(nom) VALUES
+    ('Rémi Bastide'),
+    ('Elyes Lamine'),
+    ('Jean-Marie Pécatte');
